@@ -1,0 +1,12 @@
+{
+    "id": "sponsor",
+    "name": "Sponsor",
+    "description": "Tracks which members invited others to register at the web site.",
+    "keywords": [
+    ],
+    "version": "0.2",
+    "humhub": {
+        "minVersion": "1.2"
+    },
+    "screenshots": []
+}
