@@ -29,6 +29,7 @@ class Events
     public static function onAfterInsertInvite($event)
     {
         try {
+            if ( Yii::$app->user->isGuest ) return;
             $identity = Yii::$app->user->getIdentity();
             $sponsor = new Sponsor();
             $sponsor->invited_email = strtolower(trim($event->sender->email));
